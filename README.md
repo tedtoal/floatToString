@@ -33,6 +33,7 @@ The `floatToString()` function has this declaration:
 
 ```
 char* floatToString(float f, char* S, size_t n, int digitsAfterDP);
+```
 
 The argument `f` is the float value to convert to a string, `S` is a character buffer big enough to hold the result, `n` is simply `sizeof(S)`, and `digitsAfterDP` is the number of digits you want after the decimal place. It can be 0 for no digits after the dp, and it can even be negative. For example, -2 means that the last two digits just left of the decimal point are to be 0 after rounding the next digit up (and the number must be at >99 or < -99). 
 
