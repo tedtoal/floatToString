@@ -3,10 +3,10 @@
 
 ## Table of Contents
 
-* [Release v1.1.1](#release-v111)
+* [Release 1.1.1](#release-111)
 ---
 
-### Release v1.1.1
+### Release 1.1.1
 
 1. Initial release.
 
