@@ -7,7 +7,7 @@ This library makes it easy to print floating point values to a serial port or to
 
 ## Usage
 
-Here is sample code showing how to use the `floatToString()` function. It uses the `monitor_printf` library also to printf to the serial monitor window.
+Here is sample code showing how to use the `floatToString()` function. It also uses the `monitor_printf` library to printf to the serial monitor window.
 
 ```
 #include <floatToString.h>
