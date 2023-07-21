@@ -36,7 +36,7 @@
 #include <Arduino.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "floatToString.h"
+#include <floatToString.h>
 
 char* floatToString(float f, char* S, size_t n, int digitsAfterDP) {
   if (digitsAfterDP == 0)
