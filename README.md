@@ -3,7 +3,7 @@
 ## Library for converting float values to strings
 
 This library provides a C code function named floatToString() that converts a float (floating point) value to a string with specified number digits after the decimal point. It rounds the value to the nearest least significant digit.
-This library makes it easy to use printf()-style function calls in your Arduino C++ code to print messages to the Arduino IDE serial monitor window or to other serial ports.
+This library makes it easy to print floating point values to a serial port or to a device.
 
 ## Usage
 
