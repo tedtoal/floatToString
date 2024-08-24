@@ -50,8 +50,15 @@ char* floatToString(float f, char* S, size_t n, int digitsAfterDP) {
   } else {
     int M = (int) f;
     f = abs(f - (float) M);
-    for (int i = digitsAfterDP; i > 0; i--) f *= 10;
-    int E = (int) (f + 0.5);
+    float g = 1;
+    for (int i = digitsAfterDP; i > 0; i--) g *= 10;
+    f *= g;
+    f += 0.5;
+    if (f >= g) {
+      f -= g;
+      M += 1;
+    }
+    int E = (int) f;
     char fmt[10]; // "%d.%05d"
     sprintf(fmt, "%%d.%%0%dd", digitsAfterDP);
     snprintf(S, n, fmt, M, E);
